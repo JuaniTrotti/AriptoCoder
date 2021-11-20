@@ -1,0 +1,125 @@
+@import 'variables';
+/* //////////////////////////////////////////////////////////////////////////////// */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cFlex {
+    display: flex;
+}
+
+.listas {
+    list-style: none;
+}
+
+.botones {
+    color: white;
+    font-family: var(font-principal-regular);
+    border-radius: 3em;
+    text-decoration: none;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+.principal {
+    background-color: $color-fondo;
+    margin: 0em;
+    padding: 20em 0 20em 0;
+}
+
+%pieStyle {
+    color: $color-footer;
+    background-color: $color-footer-fondo;
+    position: absolute;
+    width: 100%;
+
+    .listas {
+        // margin-left: 2%;
+        padding: 1% 0 1% 0;
+
+        li {
+            font-family: var(--font-subtitulos-semibold);
+        }
+    }
+}
+
+.pie {
+    @extend %pieStyle;
+}
+
+.pieSimple {
+    @extend %pieStyle
+}
+
+.titulos {
+    font-size: 3rem;
+    font-style: inherit;
+    font-family: var(--font-titulos-bold);
+    color: $color-principal;
+}
+
+.subTitulos {
+    font-size: 2rem;
+    font-style: inherit;
+    font-family: var(--font-subtitulos-semibold);
+    color: $color-principal;
+}
+
+.subtitulosSecundarios {
+    font-size: 1.5rem;
+    font-style: inherit;
+    font-family: var(--font-subtitulos-semibold);
+    color: $color-principal;
+}
+
+.texto {
+    font-size: 1rem;
+    font-family: var(--font-principal-regular);
+    font-weight: bold;
+    text-align: justify;
+    color: $color-principal;
+}
+
+body {
+    background-color: white;
+}
+
+.rosa {
+    background-color: $color-botones;
+    border: 1px solid $color-botones;
+    padding: 0.8em;
+}
+
+.miH2 {
+    font-size: 1rem;
+    margin: 0;
+    align-items: center;
+    font-weight: bold;
+    line-height: 0;
+    margin-block-end: 0;
+    margin-block-start: 0;
+    font-family: var(--font-principal-regular);
+}
+
+.link {
+    text-decoration: none;
+}
+
+.enlace {
+    text-decoration: none;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+    background-color: $color-principal;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 1em;
+}
+/* //////////////////////////////////////////////////////////////////////////////// */

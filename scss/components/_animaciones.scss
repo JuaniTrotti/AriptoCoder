@@ -1,0 +1,15 @@
+@import '../base/variables';
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* Animaciones */
+.header02 .botones:hover, .header02 .logo:hover, .itemUsuario:hover, .iconOp:hover, .iconoMenu:hover, .cardUsuario:hover {
+    transform: translate(0, -2px);
+    filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 5px 5px);
+    transition: all 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.03, 1.03);
+    filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 5px 5px);
+    transition: all 0.2s;   
+}
+/* //////////////////////////////////////////////////////////////////////////////// */

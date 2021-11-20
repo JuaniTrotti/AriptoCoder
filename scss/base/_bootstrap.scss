@@ -1,0 +1,35 @@
+/* //////////////////////////////////////////////////////////////////////////////// */
+.landingContainerCarrusel {
+    width: 100%;
+    height: 600px;
+    padding: 120px;
+
+    .carruImg {
+        object-fit: cover;
+        height: 600px;
+        width: 100%;
+        border-radius: 1em;
+    }
+    
+    .textCarru {
+        font-size: 3rem;
+        margin-bottom: 90px;
+    }
+}
+
+.separador {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    // width: 58%;
+    padding: 0;
+
+    .lineaSeparador {
+        width: 100%;
+        height: 2px;
+        border: 1px solid $color-principal;
+        border-radius: 4rem;
+    }
+}  
+/* //////////////////////////////////////////////////////////////////////////////// */

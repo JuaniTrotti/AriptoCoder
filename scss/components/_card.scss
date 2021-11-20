@@ -1,0 +1,53 @@
+/* //////////////////////////////////////////////////////////////////////////////// */
+.containerSubastas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    // margin: 0 8%;
+
+    .card {
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: white;
+        border-radius: 1em;
+        filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 20px 20px);
+
+        
+        .listas {
+            flex-direction: column;
+            justify-content: center;
+            height: 50px;
+            padding: 20px;
+            margin-top: 16px;
+            width: 100%;
+        }
+
+        .listCard {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            font-family: var(--font-numeros);
+            font-size: 10px;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            height: 80px;
+            border-radius: 0 0 1.5em 1.5em;
+        }
+
+        .imagenFlex {
+            height: 300px;
+            width: 100%;
+
+            .imagenCard {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                border-radius: 1em 1em 0 0;
+            }
+        }
+    }
+}
+
+
+/* //////////////////////////////////////////////////////////////////////////////// */

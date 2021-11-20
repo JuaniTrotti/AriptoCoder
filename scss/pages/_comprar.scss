@@ -1,0 +1,146 @@
+@import '../base/variables';
+/* //////////////////////////////////////////////////////////////////////////////// */
+.sectionMainContainer {
+    flex-direction: column;
+    background-color: $color-fondo;
+    height: calc(650px + 1.6em);
+
+    .principalContainerCompra {
+        margin: 100px;
+        justify-content: center;
+
+        .itemImagenCompra {
+            justify-content: center;
+            align-items: center;
+            /* height: 300px; */
+            height: 450px;
+
+            .imagenCompra {
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+            
+                /* efecto sombra */
+                filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 20px 20px);
+            }
+        }
+    }
+
+    .usOp {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        justify-content: center;
+        gap: 40px;
+        margin: 0 8%;
+
+        .nom1 {
+            justify-content: flex-start;
+
+            .itemUsuario {
+                border: 1px solid white;
+                border-radius: 2em;
+                background-color: white;
+                color: $color-footer-fondo;
+                padding: 0 1.5em 0 0.8em;
+                font-family: var(--font-principal-regular);
+                filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 5px 5px);
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: center;
+
+                .iconPerfil {
+                    transform: scale(.6);
+                }
+            }
+        }
+
+        .op1 {
+            justify-content: flex-end;
+
+            .iconOp {
+                border: 1px solid white;
+                border-radius: 2em;
+                background-color: white;
+                padding: 0.5em 0.5em 0.5em 0.5em;
+                filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 5px 5px);
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+
+                .iconOpc {
+                    padding: 0.2em;
+                }
+            }
+        }
+    }
+}
+
+.infoContainer:first-child {
+    grid-area: info;
+}
+
+.compraContainer:nth-child(2) {
+    grid-area: compra;
+}
+
+.dataContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px;
+    margin: 4% 8%;
+
+    grid-template-areas: 
+    'info compra';
+
+    .infoContainer {
+
+        .infoCompra {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+    
+            .itemNombre {
+    
+                .titulos {
+                    display: flex;
+                    justify-content: flex-start;
+                }
+            }
+    
+            .itemDesc {
+    
+                .textoMain {
+                    display: flex;
+                    justify-content: flex-start;
+                    margin: 0;
+                }
+            }
+        }
+    }
+
+    .compraContainer {
+
+        .compraCompra {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+    
+            .itemActividad {
+                display: flex;
+                justify-content: flex-end;
+            }
+    
+            .itemPujas {
+                display: flex;
+                justify-content: flex-end;
+            }
+    
+        }
+    }
+}
+
+.infoPerfilContainer {
+    margin: 10%;
+}
+/* //////////////////////////////////////////////////////////////////////////////// */

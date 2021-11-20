@@ -1,0 +1,446 @@
+@import '../components/coleccion';
+
+
+@media screen and (min-width: 1921px) {
+    .subastasFlex {
+        display: flex;
+        justify-content: center;
+    }
+
+    .containerSubastas {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-basis: 1616px;
+        flex-wrap: wrap;
+        margin: 3% 0;       
+
+        .card {
+            flex-basis: 374px;
+            max-width: 374px;
+        }
+    }
+
+    .coleccionFlex {
+        display: flex;
+        justify-content: center;
+
+        .coleccionesContainer {
+            @include gridCol(2, 1fr);
+            width: 100%;
+            max-width: 1614px;
+        }
+    }
+
+    .dataContainerFlex {
+        display: flex;
+        justify-content: center;
+
+        .dataContainer {
+            display: flex;
+            flex-basis: 1616px;
+            max-width: 1616px;
+            justify-content: space-between;
+        }
+    }
+
+    .sectionMainContainer {
+
+        .usOpCont {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            .usOpContFlex {
+                display: flex;
+                flex-basis: 1616px;
+                max-width: 1616px;
+                width: 100%;
+
+                .usOp {
+                    margin: 0;
+                    gap: 1150px;
+
+                    .nom1 {
+                        width: 258px;
+                    }
+                }
+            }
+        }
+    }
+
+    .borPrinCont {
+        display: flex;
+        justify-content: center;
+        // flex-basis: 1616px;
+        // max-width: 1616px;
+
+        .borPrin {
+            display: flex;
+            justify-content: center;
+            flex-basis: 1616px;
+            max-width: 1616px;
+        }
+    }
+}
+
+@media screen and (min-width: 1708px) {
+    .encabezado {
+
+        .header01 {
+            flex-basis: 1612px;
+
+            .header02 {
+
+                .botones {
+                    flex-basis: 180px;
+                }
+
+                .search {
+                    flex-grow: 0;
+                    flex-basis: 1192px;
+                }
+
+                .logo {
+                    flex-basis: 95px;
+                }
+            
+                .iconoMenu {
+                    flex-basis: 26px;
+                }
+            }
+        }
+    }
+}
+
+/* tablet */
+@media screen and (min-width: 680px) and (max-width: 960px) {
+    .encabezado {
+
+        .header01 {
+            margin: 10px;
+
+            .header02 {
+                justify-content: space-between;
+
+                .search {
+                    display: none;
+                }
+            
+                .botones {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+/* mobile */
+@media screen and (max-width: 680px) {
+    .encabezado {
+
+        .header01 {
+            margin: 10px;
+
+            .header02 {
+                justify-content: space-between;
+
+                .search{
+                    display: none;
+                }
+
+                .botones {
+                    display: none;
+                }
+            }
+    
+        }
+    }
+
+    .dataContainerFlex {
+
+        .dataContainer {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 200px 400px;
+            margin: 3rem;
+        
+            grid-template-areas: 
+            'info'
+            'compra';
+    
+            .compraContainer {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+                .compraCompra {
+                    
+                    .itemActividad {
+                        justify-content: flex-start;
+                    }
+                }
+            }
+        }
+    }
+    
+    .infoContainer:first-child {
+        grid-area: info;
+    }
+    
+    .compraContainer:nth-child(2) {
+        grid-area: compra;
+    }
+}
+
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* media query para index */
+
+@media screen and (min-width: 1601px) {
+    .principalContainer {
+        height: 800px;
+
+        .landingContainer {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .principalContainer {
+        height: 800px;
+        width: 100%;
+
+        .landingContainerCarrusel {
+            display: none;
+        }
+    }
+}
+
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* media query para grid subastas */
+@media screen and (min-width: 1800px) and (max-width: 1920px){
+    .containerSubastas {
+        margin: 3% 8%;
+    }
+
+    .coleccionesContainer {
+        margin: 3% 8%;
+    }
+
+    .borPrin {
+        margin: 5% 8%;
+    }
+}
+
+@media screen and (min-width: 1500px) and (max-width: 1800px) {
+    .containerSubastas {
+        margin: 2% 4%;
+    }
+
+    .coleccionesContainer {
+        margin: 2% 4%;
+    }
+
+    .borPrin {
+        margin: 5% 4%;
+    }
+
+    .pie {
+        padding: 0 4%;
+    }
+
+    .pieSimple {
+        padding: 0 4%;
+    }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1500px) {
+    .containerSubastas {
+        margin: 2% 4%;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .coleccionesContainer {
+        margin: 2% 4%;
+    }
+
+    .pie {
+        padding: 0 4%;
+    }
+}
+
+@media screen and (max-width: 1350px) {
+    .coleccionesContainer {
+        @include gridCol(1, 1fr)
+    }
+}
+
+@media screen and (min-width: 580px) and (max-width: 1100px) {
+    .containerSubastas {
+        margin: 1% 4%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .principalContainer {
+        height: 600px;
+
+        .landingContainer {
+            grid-template-columns: 1fr;
+            grid-template-rows: 400px;
+            padding: 10em 5em 5em 5em;
+        
+            grid-template-areas: 
+            'texto';
+
+            .fotoMain {
+                display: none;
+            }
+        }
+    }
+
+    .coleccionesContainer {
+        margin: 4% 4%;
+    }
+
+    .pie {
+        padding: 0 4%;
+    
+        .secFooter1 {
+    
+            .navFooter {
+                flex-direction: column;
+    
+                .lIzq {
+                    margin: 0;
+                }
+            }
+        }
+    
+        .secFooter2 {
+    
+            .navFooter2 {
+                
+                .listas {
+    
+                    .listasT {
+                        display: none;
+                    }
+                }
+            } 
+        }
+    }
+    
+    .pieSimple {
+        padding: 0 4%;
+
+        .secFooter2 {
+    
+            .navFooter2 {
+                
+                .listas {
+    
+                    .listasT {
+                        display: none;
+                    }
+                }
+            } 
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .coleccionesContainer {
+    
+        .coleccionCard {
+            
+            .textoColeccion {
+    
+                .nombreColeccion {
+                  font-size: 3rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .containerSubastas {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 2% 15%;
+    }
+
+    .coleccionesContainer {
+        margin: 2% 15%;
+    }
+
+    .principalContainer {
+        height: 600px;
+
+        .landingContainer {
+            grid-template-columns: 1fr;
+            grid-template-rows: 400px;
+            padding: 5em 1em 2em 1em;
+        
+            grid-template-areas: 
+            'texto';
+
+            .textoItem {
+                transform: scale(.8);
+            }
+
+            .fotoItem {
+                
+                .fotoMain {
+                    display: none;
+                }
+            }
+        }
+    }
+ 
+    .pie {
+        padding: 0 4%;
+    
+        .secFooter1 {
+    
+            .navFooter {
+                flex-direction: column;
+    
+                .lIzq {
+                    margin: 0;
+                }
+            }
+        }
+    
+        .secFooter2 {
+    
+            .navFooter2 {
+                
+                .listas {
+    
+                    .listasT {
+                        display: none;
+                    }
+                }
+            } 
+        }
+    } 
+    
+    .pieSimple {
+        padding: 0 4%;
+
+        .secFooter2 {
+    
+            .navFooter2 {
+                
+                .listas {
+    
+                    .listasT {
+                        display: none;
+                    }
+                }
+            } 
+        }
+    }
+}

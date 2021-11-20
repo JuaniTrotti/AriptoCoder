@@ -1,0 +1,112 @@
+@import '../base/variables';
+
+/* //////////////////////////////////////////////////////////////////////////////// */
+/* footer index */
+
+%pie {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-fondo-footer;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 0 8%;
+}
+
+%footer1 {
+    .secFooter1 {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 40px 0;
+
+        .navFooter {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+
+            .lIzq {
+                flex-direction: column;
+            }
+    
+            .lDer {
+                flex-direction: column;
+                justify-content: flex-start;
+            }
+        }
+    }
+
+    .separadorFooter {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        width: 100%;
+        padding: 0;
+
+        .lineaSeparador {
+            width: 100%;
+            height: 2px;
+            border: 1px solid $color-footer;
+            border-radius: 4rem;
+        }
+    }   
+}
+
+%footer2 {
+    .secFooter2 {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        padding: 20px 0;
+
+        .navFooter2 {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: stretch;
+            width: 100%;
+
+            .redFoot {
+                flex-direction: row;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin-bottom: 0;
+
+                li {
+                    padding-left: 0;
+                    margin-right: 40px;
+
+                    .logoFooter {
+                        margin-bottom: 4px;
+
+                    }
+                }
+            }
+
+            .redes {
+                flex-direction: row;
+                justify-content: flex-end;
+                align-items: center;
+
+                .logoRedes {
+                    transform: scale(0.8);
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
+
+.pie {
+    @extend %pie;
+    @extend %footer1;
+    @extend %footer2;
+}
+
+.pieSimple {
+    @extend %pie;
+    @extend %footer2;
+}
+/* //////////////////////////////////////////////////////////////////////////////// */
