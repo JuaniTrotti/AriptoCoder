@@ -457,7 +457,9 @@ body::-webkit-scrollbar-thumb {
   transform: scale(0.6);
 }
 .encabezado .iconoMenu {
+  position: fixed;
   margin: 0 20px;
+  z-index: 100;
 }
 .encabezado .menuHamburguer {
   margin: 2%;
@@ -468,6 +470,14 @@ body::-webkit-scrollbar-thumb {
 }
 .encabezado .listas {
   padding: 0.5em 0 0 3em;
+}
+
+.containerHam {
+  margin: 0 1.3%;
+  margin-top: 23px;
+  position: fixed;
+  right: 0;
+  top: 0;
 }
 
 /* //////////////////////////////////////////////////////////////////////////////// */
@@ -638,6 +648,65 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* //////////////////////////////////////////////////////////////////////////////// */
+#btn-menu {
+  display: none;
+}
+
+#btn-menu:checked ~ .menuHamburguer {
+  right: 0;
+}
+
+#btn-menu:checked ~ .blurContainer {
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
+}
+
+.containerHam {
+  height: 51.59px;
+  align-items: center;
+}
+.containerHam .iconoMenu {
+  transform: scale(1.2, 1.2);
+}
+
+.encabezado label:hover {
+  cursor: pointer;
+}
+
+.encabezado .iconoMenu {
+  position: relative;
+}
+.encabezado .blurContainer {
+  position: fixed;
+  width: 1920px;
+  height: 1080px;
+  margin: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0);
+  backdrop-filter: blur(0px);
+  transition: all 0.8s;
+}
+.encabezado .menuHamburguer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  transition: all 0.8s;
+}
+.encabezado .menuHamburguer .containerMenuHam {
+  position: absolute;
+  background-color: #f3f3f3;
+  border-radius: 1.5rem 0 0 1.5rem;
+  right: -50%;
+  height: 100%;
+  width: 50%;
+  top: 0;
+  right: 0;
+}
+
 /* //////////////////////////////////////////////////////////////////////////////// */
 .landingContainerCarrusel {
   width: 100%;
@@ -672,7 +741,7 @@ body::-webkit-scrollbar-thumb {
 /* //////////////////////////////////////////////////////////////////////////////// */
 /* //////////////////////////////////////////////////////////////////////////////// */
 /* Animaciones */
-.header02 .botones:hover, .header02 .logo:hover, .itemUsuario:hover, .iconOp:hover, .iconoMenu:hover, .cardUsuario:hover {
+.header02 .botones:hover, .header02 .logo:hover, .itemUsuario:hover, .iconOp:hover, .cardUsuario:hover {
   transform: translate(0, -2px);
   filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 5px 5px);
   transition: all 0.2s;
