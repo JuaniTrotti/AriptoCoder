@@ -166,25 +166,25 @@
 
 /* mobile */
 @media screen and (max-width: 680px) {
-    .encabezado {
+    // .encabezado {
 
-        .header01 {
-            margin: 10px;
+    //     .header01 {
+    //         margin: 10px;
 
-            .header02 {
-                justify-content: space-between;
+    //         .header02 {
+    //             justify-content: space-between;
 
-                .search{
-                    display: none;
-                }
+    //             .search{
+    //                 display: none;
+    //             }
 
-                .botones {
-                    display: none;
-                }
-            }
+    //             .botones {
+    //                 display: none;
+    //             }
+    //         }
     
-        }
-    }
+    //     }
+    // }
 
     .dataContainerFlex {
 
@@ -486,7 +486,7 @@
 
         .header01 {
             flex-basis: 464px;
-            margin: 0 10%;
+            margin: 0;
         }
     }
 }
@@ -609,7 +609,29 @@
 
         .header01 {
             flex-basis: 256px;
-            margin: 0 15%;
+            margin: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .encabezado {
+
+        .header01 {
+            flex-basis: 464px;
+            margin: 0;
+
+            .header02 {
+                justify-content: space-between;
+
+                .search{
+                    display: none;
+                }
+
+                .botones {
+                    display: none;
+                }
+            }
         }
     }
 }
