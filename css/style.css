@@ -656,11 +656,6 @@ body::-webkit-scrollbar-thumb {
   right: 0;
 }
 
-#btn-menu:checked ~ .blurContainer {
-  background-color: rgba(0, 0, 0, 0.4);
-  backdrop-filter: blur(4px);
-}
-
 .containerHam {
   height: 51.59px;
   align-items: center;
@@ -676,17 +671,6 @@ body::-webkit-scrollbar-thumb {
 .encabezado .iconoMenu {
   position: relative;
 }
-.encabezado .blurContainer {
-  position: fixed;
-  width: 1920px;
-  height: 1080px;
-  margin: 0;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0);
-  backdrop-filter: blur(0px);
-  transition: all 0.8s;
-}
 .encabezado .menuHamburguer {
   position: fixed;
   top: 0;
@@ -694,7 +678,8 @@ body::-webkit-scrollbar-thumb {
   height: 100%;
   width: 100%;
   margin: 0;
-  transition: all 0.8s;
+  filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 40px 40px);
+  transition: all 0.6s;
 }
 .encabezado .menuHamburguer .containerMenuHam {
   position: absolute;
@@ -702,7 +687,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 1.5rem 0 0 1.5rem;
   right: -50%;
   height: 100%;
-  width: 50%;
+  width: 46%;
   top: 0;
   right: 0;
 }
