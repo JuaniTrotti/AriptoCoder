@@ -878,22 +878,31 @@ body::-webkit-scrollbar-thumb {
     border: 1px solid #d4d4d4;
     border-radius: 2rem;
   }
+
+  .encabezado {
+    display: flex;
+    justify-content: center;
+  }
+  .encabezado .header01 {
+    flex-basis: 1616px;
+    max-width: 1616px;
+    flex-grow: 0;
+  }
+
+  .pie {
+    justify-content: center;
+  }
+  .pie .secFooter1 {
+    max-width: 1616px;
+  }
+  .pie .separadorFooter {
+    max-width: 1616px;
+  }
+  .pie .secFooter2 {
+    max-width: 1616px;
+  }
 }
 /* tablet */
-@media screen and (min-width: 680px) and (max-width: 960px) {
-  .encabezado .header01 {
-    margin: 10px;
-  }
-  .encabezado .header01 .header02 {
-    justify-content: space-between;
-  }
-  .encabezado .header01 .header02 .search {
-    display: none;
-  }
-  .encabezado .header01 .header02 .botones {
-    display: none;
-  }
-}
 /* mobile */
 @media screen and (max-width: 680px) {
   .dataContainerFlex .dataContainer {
@@ -1132,6 +1141,19 @@ body::-webkit-scrollbar-thumb {
   }
 }
 @media screen and (max-width: 580px) {
+  .perfilContainer {
+    margin-bottom: 10%;
+  }
+  .perfilContainer .fotosContainer .fotoPerfil {
+    display: flex;
+    justify-content: center;
+  }
+  .perfilContainer .fotosContainer .fotoPerfil .fondoPerfil {
+    top: 55%;
+    left: 0;
+  }
+}
+@media screen and (min-width: 488px) and (max-width: 580px) {
   .containerSubastas {
     grid-template-columns: repeat(1, 1fr);
     margin: 2% 15%;
@@ -1197,6 +1219,80 @@ body::-webkit-scrollbar-thumb {
   .encabezado .header01 {
     flex-basis: 256px;
     margin: 0;
+  }
+
+  .borPrinCont {
+    margin: 0 7.5%;
+  }
+}
+@media screen and (max-width: 488px) {
+  .containerSubastas {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 2% 20%;
+  }
+
+  .coleccionesContainer {
+    margin: 2% 20%;
+  }
+
+  .pie {
+    padding: 0 20%;
+  }
+  .pie .secFooter1 .navFooter {
+    flex-direction: column;
+  }
+  .pie .secFooter1 .navFooter .lIzq {
+    margin: 0;
+  }
+  .pie .secFooter2 .navFooter2 .listas .listasT {
+    display: none;
+  }
+
+  .pieSimple {
+    padding: 0 20%;
+  }
+  .pieSimple .secFooter2 .navFooter2 .listas .listasT {
+    display: none;
+  }
+
+  .containerTexto {
+    margin: 10% 20%;
+  }
+  .containerTexto .containerMax {
+    flex-direction: column;
+    min-width: 73px;
+    flex-grow: 1;
+  }
+  .containerTexto .containerMax .separador {
+    margin: 1% 0;
+    width: 100%;
+  }
+  .containerTexto .containerMax .separador .lineaSeparador {
+    border: 1px solid #d4d4d4;
+    border-radius: 2rem;
+  }
+
+  .containerSubastas .card .imagenFlex {
+    height: 250px;
+  }
+
+  .coleccionFlex {
+    margin: 10% 0;
+  }
+  .coleccionFlex .coleccionCard {
+    height: 480px;
+  }
+  .coleccionFlex .coleccionCard .textoColeccion .nombreColeccion {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    width: 200px;
+    left: -15%;
+    top: 120px;
+    height: 40px;
+  }
+
+  .borPrinCont {
+    margin: 0 10%;
   }
 }
 @media screen and (max-width: 1100px) {

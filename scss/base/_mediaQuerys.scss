@@ -111,6 +111,34 @@
             }
         }
     }
+
+    .encabezado {
+        display: flex;
+        justify-content: center;
+
+        .header01 {
+            flex-basis: 1616px;
+            max-width: 1616px;
+            flex-grow: 0;
+            // justify-content: center;
+        }
+    }
+
+    .pie {
+        justify-content: center;
+
+        .secFooter1 {
+            max-width: 1616px;
+        }
+
+        .separadorFooter {
+            max-width: 1616px;
+        }
+
+        .secFooter2 {
+            max-width: 1616px;
+        }
+    }
 }
 
 @media screen and (min-width: 1708px) {
@@ -143,49 +171,29 @@
 }
 
 /* tablet */
-@media screen and (min-width: 680px) and (max-width: 960px) {
-    .encabezado {
+// @media screen and (min-width: 680px) and (max-width: 960px) {
+//     .encabezado {
 
-        .header01 {
-            margin: 10px;
+//         .header01 {
+//             margin: 10px;
 
-            .header02 {
-                justify-content: space-between;
+//             .header02 {
+//                 justify-content: space-between;
 
-                .search {
-                    display: none;
-                }
+//                 .search {
+//                     display: none;
+//                 }
             
-                .botones {
-                    display: none;
-                }
-            }
-        }
-    }
-}
+//                 .botones {
+//                     display: none;
+//                 }
+//             }
+//         }
+//     }
+// }
 
 /* mobile */
 @media screen and (max-width: 680px) {
-    // .encabezado {
-
-    //     .header01 {
-    //         margin: 10px;
-
-    //         .header02 {
-    //             justify-content: space-between;
-
-    //             .search{
-    //                 display: none;
-    //             }
-
-    //             .botones {
-    //                 display: none;
-    //             }
-    //         }
-    
-    //     }
-    // }
-
     .dataContainerFlex {
 
         .dataContainer {
@@ -507,6 +515,25 @@
 }
 
 @media screen and (max-width: 580px) {
+    .perfilContainer {
+        margin-bottom: 10%;
+
+        .fotosContainer {
+
+            .fotoPerfil {
+                display: flex;
+                justify-content: center;
+    
+                .fondoPerfil {
+                    top: 55%;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 488px) and (max-width: 580px) {
     .containerSubastas {
         grid-template-columns: repeat(1, 1fr);
         margin: 2% 15%;
@@ -612,6 +639,120 @@
             margin: 0;
         }
     }
+
+    .borPrinCont {
+        margin: 0 7.5%;
+    }
+}
+
+@media screen and (max-width: 488px) {
+    .containerSubastas {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 2% 20%;
+    }
+
+    .coleccionesContainer {
+        margin: 2% 20%;
+    }
+
+    .pie {
+        padding: 0 20%;
+    
+        .secFooter1 {
+    
+            .navFooter {
+                flex-direction: column;
+    
+                .lIzq {
+                    margin: 0;
+                }
+            }
+        }
+    
+        .secFooter2 {
+    
+            .navFooter2 {
+                
+                .listas {
+    
+                    .listasT {
+                        display: none;
+                    }
+                }
+            } 
+        }
+    } 
+    
+    .pieSimple {
+        padding: 0 20%;
+
+        .secFooter2 {
+    
+            .navFooter2 {
+                
+                .listas {
+    
+                    .listasT {
+                        display: none;
+                    }
+                }
+            } 
+        }
+    }
+
+    .containerTexto {
+        margin: 10% 20%;
+
+        .containerMax {
+            flex-direction: column;
+            min-width: 73px;
+            flex-grow: 1;
+
+            .separador {
+                margin: 1% 0;
+                width: 100%;
+
+                .lineaSeparador {
+                    border: 1px solid #d4d4d4;
+                    border-radius: 2rem;
+                }
+            }
+        }
+    }
+
+    .containerSubastas {
+
+        .card {
+
+            .imagenFlex {
+                height: 250px;
+            }
+        }
+    }
+
+    .coleccionFlex {
+        margin: 10% 0;
+
+        .coleccionCard {
+            height: 480px;
+
+            .textoColeccion {
+                
+                .nombreColeccion {
+                    transform: rotate(90deg);
+                    -webkit-transform: rotate(90deg);
+                    width: 200px;
+                    left: -15%;
+                    top: 120px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+
+    .borPrinCont {
+        margin: 0 10%;
+    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -635,3 +776,4 @@
         }
     }
 }
+
