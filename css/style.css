@@ -1224,6 +1224,17 @@ body::-webkit-scrollbar-thumb {
   .borPrinCont {
     margin: 0 7.5%;
   }
+
+  .fondoMain .sectionMainContainer {
+    height: calc(550px + 1.6em);
+  }
+  .fondoMain .sectionMainContainer .principalContainerCompra .itemImagenCompra {
+    height: 350px;
+  }
+  .fondoMain .sectionMainContainer .usOpCont .usOpContFlex .usOp {
+    grid-template-columns: 2fr 1fr;
+    gap: 0;
+  }
 }
 @media screen and (max-width: 488px) {
   .containerSubastas {
@@ -1293,6 +1304,28 @@ body::-webkit-scrollbar-thumb {
 
   .borPrinCont {
     margin: 0 10%;
+  }
+
+  .fondoMain .sectionMainContainer {
+    height: calc(450px + 1.6em);
+  }
+  .fondoMain .sectionMainContainer .principalContainerCompra .itemImagenCompra {
+    height: 250px;
+  }
+  .fondoMain .sectionMainContainer .usOpCont .usOpContFlex {
+    margin: 0 10%;
+  }
+  .fondoMain .sectionMainContainer .usOpCont .usOpContFlex .usOp {
+    grid-template-columns: 2fr 1fr;
+    gap: 0;
+  }
+
+  .dataContainerFlex .dataContainer {
+    margin: 16%;
+  }
+
+  .infoPerfilContainer {
+    margin: 20%;
   }
 }
 @media screen and (max-width: 1100px) {
