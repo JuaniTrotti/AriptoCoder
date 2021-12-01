@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- estilos -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- descripcion -->
+    <meta name="description" content="Aripto es un marketplace exlcusivo para NFTs. Compra, vende y descubra criptoArte exclusivo.">
+    <meta name="keywords" content="cripto, NFT, criptoart, marketplace, ">
+
+    <!-- protocolo open graph -->
+    <meta property="og:title" content="Aripto | Marketplace NFT exclusivo">
+    <meta property="og:url" content="www.aripto.com/home">
+    <meta property="og:image" content="https://i.ibb.co/n7s8GH5/Aripto-Para-Graph.jpg">
+    <meta property="og:description" content="Aripto es un marketplace exlcusivo para NFTs. Compra, vende y descubra criptoArte exclusivo.">
+
+    <!-- texto pestaña -->
+    <title>Home | Aripto</title>
+</head>
+<body>
+    <header class="encabezado" id="tope">
+        <div class="header01 cFlex">
+            <nav class="header02 cFlex">
+                <a href="index.html#tope" class="logo cFlex"><img src="materiales/icon/logo.svg" alt="imagen Logo"></a>
+                <button class="search cFlex">
+                    <img src="materiales/icon/search.svg" alt="icono Buscar" class="iconBuscar">
+                    <h2 class="miH2 cFlex">Buscar</h2>
+                </button>
+                <button  class="botones rosa">Conectar<span> Wallet</button>
+                <div class="containerHam cFlex">
+                    <input type="checkbox" id="btn-menu">
+                    <label for="btn-menu">
+                        <img src="materiales/icon/Menuhamburguesa.svg" alt="icono del menu hamburguesa" class="iconoMenu">
+                    </label> 
+
+                    <section class="menuHamburguer cFlex">
+                        <div class="containerMenuHam">
+                            <h2 class="subTitulos">Social.</h2>
+                            <nav>
+                                <ul class="listas">
+                                    <li>Instagram</li>
+                                    <li>Twitter</li>
+                                </ul>
+                            </nav>
+                        
+                            <h2 class="subTitulos">Menu.</h2>
+                            <nav>
+                                <ul class="listas">
+                                    <!-- agrege aca mi perfil, pero en realidad tiene que aparecer despues de conectar
+                                         la wallet, como un inicio de sesion, me imagino que despues veremos como se hace esto -->
+                                    <li>
+                                        <a href="./html/Miperfil.html" class="link">Mi perfil</a>
+                                    </li>
+                                    <li>Sobre nosotros</li>
+                                    <li>Privacidad</li>
+                                    <li>Reglas de la comunidad</li>
+                                    <li>Preguntas frecuentes</li>
+                                    <li>Ayuda</li>
+                                    <li>Newsletters</li>
+                                </ul>
+                            </nav>
+                        
+                            <h2 class="subTitulos">Contacto.</h2>
+                            <nav>
+                                <ul class="listas">
+                                    <li>example@gmail.com</li>
+                                    <li>example@outlook.com</li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </section>
+                </div> 
+            </nav>
+        </div>
+
+    </header>
+
+
+    <!-- main  -->
+    <!-- <main class="principalContainer">
+        <div class="landingContainer">
+            <div class="textoItem">
+                <h1 class="titulos">Descubre, compra y vende asombrosos NFT</h1>
+                <h2 class="subTitulos">El primer marketplace NFT exclusivo para artistas que estan comenzando</h2>
+                <nav class="mainNav">
+                    <a href="" class="botones botonesMain">Explorar</a>
+                    <a href="" class="botones botonesMain">Crear</a>
+                </nav> 
+            </div>
+            <div class="fotoItem">
+                <img src="../materiales/pictures/foto2.jpg" alt="obraPromocionada" class="fotoMain">
+            </div>
+        </div>
+
+        <div class="landingContainerCarrusel">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="../materiales/pictures/foto4.jpg" class="d-block w-100 carruImg" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="miH2 textCarru">Descubre, compra y vende asombrosos NFT</h5>
+                      </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../materiales/pictures/foto3.jpg" class="d-block w-100 carruImg" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="miH2 textCarru">Descubre, compra y vende asombrosos NFT</h5>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="../materiales/pictures/foto2.jpg" class="d-block w-100 carruImg" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="miH2 textCarru">Descubre, compra y vende asombrosos NFT</h5>
+                      </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>   
+    </main> -->
+
+    <main class="mainContainer">
+        <section class="sectionMainContainer">
+            <div>
+
+            </div>
+            <div>
+                
+            </div>
+        </section>
+    </main>
+
+    <!-- Seccion subastas recomendadas -->
+    <section>
+        <div class="containerTexto cFlex">
+            <div class="containerMax cFlex">
+                <h2 class="subTitulos cFlex">Subustas recomendadas.</h2>
+                <div class="separador cFlex">
+                    <div class="lineaSeparador"></div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Esta es la estructura de una card -->
+        <div class="subastasFlex">
+            <div class="containerSubastas">
+                <!-- <section class="cardContainer cFlex"> -->
+                <section class="card cFlex">
+                    <a href="./html/comprar.html" class="imagenFlex"> <img src="https://images.unsplash.com/photo-1631477076114-9123f721b9dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="Imagen de la obra" class="imagenCard"></a>
+                    <ul class="listas cFlex"> 
+                        <li>nombre de la obra</li>
+                        <li>perfil del autor</li>
+                    </ul>
+                    <div class="listCard cFlex">
+                        <h2 class="precioList miH2">5.334 ETH</h2>
+                        <h2 class="tiempoList miH2">10:03:22</h2>
+                    </div>
+                    <!-- aca termina una card -->
+                </section>
+    
+                <section class="card cFlex">
+                    <a href="./html/comprar.html" class="imagenFlex"> <img src="https://images.unsplash.com/photo-1618005198920-f0cb6201c115?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="Imagen de la obra" class="imagenCard"></a>
+                    <ul class="listas cFlex">
+                        <li>nombre de la obra</li>
+                        <li>perfil del autor</li>
+                    </ul>
+                    <div class="listCard cFlex">
+                        <h2 class="precioList miH2">5.334 ETH</h2>
+                        <h2 class="tiempoList miH2">10:03:22</h2>
+                    </div>
+                    <!-- aca termina una card -->
+                </section>
+    
+                <section class="card cFlex">
+                    <a href="./html/comprar.html" class="imagenFlex"> <img src="https://images.unsplash.com/photo-1637246469612-73696a975750?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1760&q=80" alt="Imagen de la obra" class="imagenCard"></a>
+                    <ul class="listas cFlex">
+                        <li>nombre de la obra</li>
+                        <li>perfil del autor</li>
+                    </ul>
+                    <div class="listCard cFlex">
+                        <h2 class="precioList miH2">5.334 ETH</h2>
+                        <h2 class="tiempoList miH2">10:03:22</h2>
+                    </div>
+                    <!-- aca termina una card -->
+                </section>
+    
+                <section class="card cFlex">
+                    <a href="./html/comprar.html" class="imagenFlex"> <img src="https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80" alt="Imagen de la obra" class="imagenCard"></a>
+                    <ul class="listas cFlex">
+                        <li>nombre de la obra</li>
+                        <li>perfil del autor</li>
+                    </ul>
+                    <div class="listCard cFlex">
+                        <h2 class="precioList miH2">5.334 ETH</h2>
+                        <h2 class="tiempoList miH2">10:03:22</h2>
+                    </div>
+                    <!-- aca termina una card -->
+                </section>
+                
+                <section class="card cFlex">
+                    <a href="./html/comprar.html" class="imagenFlex"> <img src="https://images.unsplash.com/photo-1633153010613-fd459a477641?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80" alt="Imagen de la obra" class="imagenCard"></a>
+                    <ul class="listas cFlex">
+                        <li>nombre de la obra</li>
+                        <li>perfil del autor</li>
+                    </ul>
+                    <div class="listCard cFlex">
+                        <h2 class="precioList miH2">5.334 ETH</h2>
+                        <h2 class="tiempoList miH2">10:03:22</h2>
+                    </div>
+                    <!-- aca termina una card -->
+                </section>
+
+                <section class="card cFlex">
+                    <a href="./html/comprar.html" class="imagenFlex"> <img src="https://images.unsplash.com/photo-1623775027605-1286292777f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80" alt="Imagen de la obra" class="imagenCard"></a>
+                    <ul class="listas cFlex">
+                        <li>nombre de la obra</li>
+                        <li>perfil del autor</li>
+                    </ul>
+                    <div class="listCard cFlex">
+                        <h2 class="precioList miH2">5.334 ETH</h2>
+                        <h2 class="tiempoList miH2">10:03:22</h2>
+                    </div>
+                    <!-- aca termina una card -->
+                </section>
+    
+                <section class="card cFlex">
+                    <a href="./html/comprar.html" class="imagenFlex"> <img src="https://images.unsplash.com/photo-1607789377672-f6934b34c7d9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1959&q=80" alt="Imagen de la obra" class="imagenCard"></a>
+                    <ul class="listas cFlex">
+                        <li>nombre de la obra</li>
+                        <li>perfil del autor</li>
+                    </ul>
+                    <div class="listCard cFlex">
+                        <h2 class="precioList miH2">5.334 ETH</h2>
+                        <h2 class="tiempoList miH2">10:03:22</h2>
+                    </div>
+                    <!-- aca termina una card -->
+                </section>
+    
+                <section class="card cFlex">
+                    <a href="./html/comprar.html" class="imagenFlex"> <img src="https://images.unsplash.com/photo-1633174102524-c52ffb2e2ecb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80" alt="Imagen de la obra" class="imagenCard"></a>
+                    <ul class="listas cFlex">
+                        <li>nombre de la obra</li>
+                        <li>perfil del autor</li>
+                    </ul>
+                    <div class="listCard cFlex">
+                        <h2 class="precioList miH2">5.334 ETH</h2>
+                        <h2 class="tiempoList miH2">10:03:22</h2>
+                    </div>
+                    <!-- aca termina una card -->
+                </section>
+                <!-- </section> -->
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Seccion colecciones -->
+    <section>
+        <div class="containerTexto cFlex">
+            <div class="containerMax cFlex">
+                <h2 class="subTitulos cFlex">Colecciones</h2>
+                <div class="separador cFlex">
+                    <div class="lineaSeparador"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="coleccionFlex">
+            <div class="coleccionesContainer">
+                <!-- Esta es la estructura de una coleccion -->
+                <section class="coleccionCard">
+                    <!-- Imagen de la coleccion -->
+                    <div class="oscuresedor"></div>
+                    <img src="https://images.unsplash.com/photo-1524135220673-c731600a1a50?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="Imagen de la coleccion" class="imagenColeccion">
+                    <div class="textoColeccion">
+                        <h2 class="nombreColeccion">Photography</h2>
+                    </div>
+                </section>
+                <!-- aca termina una coleccion-->
+
+                <!-- Esta es la estructura de una coleccion -->
+                <section class="coleccionCard">
+                    <!-- Imagen de la coleccion -->
+                    <div class="oscuresedor"></div>
+                    <img src="https://images.unsplash.com/photo-1542372147193-a7aca54189cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80" alt="Imagen de la coleccion" class="imagenColeccion">
+                    <div class="textoColeccion">
+                        <h2 class="nombreColeccion">Relax</h2>
+                    </div>
+                </section>
+                <!-- aca termina una coleccion-->
+
+                <!-- Esta es la estructura de una coleccion -->
+                <section class="coleccionCard">
+                    <!-- Imagen de la coleccion -->
+                    <div class="oscuresedor"></div>
+                    <img src="https://images.unsplash.com/photo-1513682121497-80211f36a7d3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1888&q=80" alt="Imagen de la coleccion" class="imagenColeccion">
+                    <div class="textoColeccion">
+                        <h2 class="nombreColeccion">Urban</h2>
+                    </div>
+                </section>
+                <!-- aca termina una coleccion-->
+
+                <!-- Esta es la estructura de una coleccion -->
+                <section class="coleccionCard">
+                    <!-- Imagen de la coleccion -->
+                    <div class="oscuresedor"></div>
+                    <img src="https://images.unsplash.com/photo-1569873927189-2ec2e5002064?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1915&q=80" alt="Imagen de la coleccion" class="imagenColeccion">
+                    <div class="textoColeccion">
+                        <h2 class="nombreColeccion">Movement</h2>
+                    </div>
+                </section>
+                <!-- aca termina una coleccion-->
+            </div>
+        </div>
+
+    </section>
+
+    <!-- footer -->
+    <footer class="pie cFlex">
+        <!-- Primera parte del footer -->
+        <section class="secFooter1 cFlex">
+            <nav class="navFooter cFlex">
+                <ul class="listas lIzq cFlex">
+                    <li>Sobre nosotros</li>
+                    <li>Reglas de la comunidad</li>
+                    <li>Preguntas frecuentes</li>
+                    <li>Ayuda</li>
+                </ul>
+
+                <ul class="listas lDer cFlex">
+                    <li>Newsletters</li>
+                </ul>
+            </nav>
+        </section>
+
+        <div class="separadorFooter cFlex">
+            <div class="lineaSeparador"></div>
+        </div>
+
+        <!-- Segunda parte del footer -->
+        <section class="secFooter2 cFlex">
+            <nav class="navFooter2 cFlex">
+                <ul class="listas redFoot cFlex">
+                    <li>
+                        <a href="#tope">
+                            <img src="materiales/icon/logoWhite.svg" alt="imagen Logo" class="logoFooter">
+                        </a>
+                    </li>
+                    <li class="listasT">Terminos y condiciones</li>
+                    <li class="listasT">Privacidad</li>
+                </ul>
+                
+                <div class="redes cFlex">
+                    <img src="materiales/icon/logoIgWhite.svg" alt="imagen Instagram" class="logoRedes">
+                    <img src="materiales/icon/logotwWhite.svg" alt="imagen Twitter" class="logoRedes">
+                </div>
+            </nav>
+        </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+</body>
+</html>
