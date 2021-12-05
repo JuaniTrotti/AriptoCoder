@@ -13,8 +13,14 @@
 .containerCrea {
     .subU {
         margin: 10px 0;
-        .separadorU {
-            width: 100%;
+    }
+
+    .separador {
+        margin: 1% 0;
+        width: 100%;
+        .lineaSeparador {
+            border: 1px solid #d4d4d4;
+            border-radius: 2rem;
         }
     }
 }

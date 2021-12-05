@@ -324,8 +324,13 @@ body::-webkit-scrollbar-thumb {
 .containerCrea .subU {
   margin: 10px 0;
 }
-.containerCrea .subU .separadorU {
+.containerCrea .separador {
+  margin: 1% 0;
   width: 100%;
+}
+.containerCrea .separador .lineaSeparador {
+  border: 1px solid #d4d4d4;
+  border-radius: 2rem;
 }
 
 .cardUsuario {
