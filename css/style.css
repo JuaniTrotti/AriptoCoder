@@ -1149,7 +1149,16 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
   }
   .perfilContainer .fotosContainer .fotoPerfil .fondoPerfil {
-    top: 55%;
+    top: 60%;
+    left: 0;
+    height: 220px;
+    width: 220px;
+    display: flex;
+    justify-content: center;
+  }
+  .perfilContainer .fotosContainer .fotoPerfil .fondoPerfil .imgPerfil {
+    height: 200px;
+    width: 200px;
     left: 0;
   }
 }
