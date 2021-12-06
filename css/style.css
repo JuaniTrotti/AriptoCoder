@@ -690,7 +690,7 @@ body::-webkit-scrollbar-thumb {
   position: absolute;
   background-color: #f3f3f3;
   border-radius: 1.5rem 0 0 1.5rem;
-  right: -50%;
+  right: 50%;
   height: 100%;
   width: 46%;
   top: 0;
