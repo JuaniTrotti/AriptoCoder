@@ -516,16 +516,28 @@
 
 @media screen and (max-width: 580px) {
     .perfilContainer {
-        margin-bottom: 10%;
+        margin-bottom: 0;
+        height: 350px;
 
         .fotosContainer {
+            height: 350px;
+
+            .fotoPortada {
+                
+                .fondoPortada {
+
+                    .imgPortada {
+                        height: 250px;
+                    }
+                }
+            }
 
             .fotoPerfil {
                 display: flex;
                 justify-content: center;
     
                 .fondoPerfil {
-                    top: 60%;
+                    top: 35%;
                     left: 0;
                     height: 220px;
                     width: 220px;
@@ -539,6 +551,16 @@
                         // top: 20px;
                     }
                 }
+            }
+        }
+    }
+
+    .borPrinCont {
+
+        .borPrin{
+
+            .containerId {
+                display: none;
             }
         }
     }

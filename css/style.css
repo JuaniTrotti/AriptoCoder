@@ -530,6 +530,7 @@ body::-webkit-scrollbar-thumb {
   width: 100%;
   height: 2px;
   border: 1px solid #ffffff;
+  background-color: #ffffff;
   border-radius: 4rem;
 }
 
@@ -1147,14 +1148,21 @@ body::-webkit-scrollbar-thumb {
 }
 @media screen and (max-width: 580px) {
   .perfilContainer {
-    margin-bottom: 10%;
+    margin-bottom: 0;
+    height: 350px;
+  }
+  .perfilContainer .fotosContainer {
+    height: 350px;
+  }
+  .perfilContainer .fotosContainer .fotoPortada .fondoPortada .imgPortada {
+    height: 250px;
   }
   .perfilContainer .fotosContainer .fotoPerfil {
     display: flex;
     justify-content: center;
   }
   .perfilContainer .fotosContainer .fotoPerfil .fondoPerfil {
-    top: 60%;
+    top: 35%;
     left: 0;
     height: 220px;
     width: 220px;
@@ -1165,6 +1173,10 @@ body::-webkit-scrollbar-thumb {
     height: 200px;
     width: 200px;
     left: 0;
+  }
+
+  .borPrinCont .borPrin .containerId {
+    display: none;
   }
 }
 @media screen and (min-width: 488px) and (max-width: 580px) {
