@@ -141,57 +141,6 @@
     }
 }
 
-@media screen and (min-width: 1708px) {
-    // .encabezado {
-
-    //     .header01 {
-    //         flex-basis: 1612px;
-
-    //         .header02 {
-
-    //             .botones {
-    //                 flex-basis: 180px;
-    //             }
-
-    //             .search {
-    //                 flex-grow: 0;
-    //                 flex-basis: 1192px;
-    //             }
-
-    //             .logo {
-    //                 flex-basis: 95px;
-    //             }
-            
-    //             .iconoMenu {
-    //                 flex-basis: 26px;
-    //             }
-    //         }
-    //     }
-    // }
-}
-
-/* tablet */
-// @media screen and (min-width: 680px) and (max-width: 960px) {
-//     .encabezado {
-
-//         .header01 {
-//             margin: 10px;
-
-//             .header02 {
-//                 justify-content: space-between;
-
-//                 .search {
-//                     display: none;
-//                 }
-            
-//                 .botones {
-//                     display: none;
-//                 }
-//             }
-//         }
-//     }
-// }
-
 /* mobile */
 @media screen and (max-width: 680px) {
     .dataContainerFlex {
@@ -228,30 +177,6 @@
     
     .compraContainer:nth-child(2) {
         grid-area: compra;
-    }
-}
-
-/* //////////////////////////////////////////////////////////////////////////////// */
-/* media query para index */
-
-@media screen and (min-width: 1601px) {
-    .principalContainer {
-        height: 800px;
-
-        .landingContainer {
-            display: none;
-        }
-    }
-}
-
-@media screen and (max-width: 1600px) {
-    .principalContainer {
-        height: 800px;
-        width: 100%;
-
-        .landingContainerCarrusel {
-            display: none;
-        }
     }
 }
 
