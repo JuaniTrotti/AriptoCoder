@@ -107,6 +107,18 @@ body {
 
 .link {
     text-decoration: none;
+
+    &:visited {
+        color: $color-principal;
+    }
+
+    &:hover {
+        color: $color-principal;
+    }
+
+    &:active {
+        color: $color-principal;
+    }
 }
 
 .enlace {

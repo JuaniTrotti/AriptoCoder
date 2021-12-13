@@ -137,6 +137,15 @@ body {
 .link {
   text-decoration: none;
 }
+.link:visited {
+  color: #2E2E2E;
+}
+.link:hover {
+  color: #2E2E2E;
+}
+.link:active {
+  color: #2E2E2E;
+}
 
 .enlace {
   text-decoration: none;
@@ -156,7 +165,7 @@ body::-webkit-scrollbar-thumb {
 /* //////////////////////////////////////////////////////////////////////////////// */
 .mainContainer {
   height: 900px;
-  background-color: #e0e0e0;
+  background: linear-gradient(180deg, #bebebe 0%, rgba(0, 0, 0, 0) 100%);
   align-items: center;
   justify-content: center;
   padding: 8% 8% 4% 8%;
@@ -211,6 +220,7 @@ body::-webkit-scrollbar-thumb {
   background-color: #2E2E2E;
   border-radius: 1.5em;
   flex-direction: column;
+  filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 20px 20px);
 }
 .mainContainer .sectionMainContainerIndex .imagenIndex .mainContenido .fotoMainContenido {
   height: 80%;
@@ -691,6 +701,10 @@ body::-webkit-scrollbar-thumb {
   right: 0;
 }
 
+#btn-menu:checked ~ .encabezado .iconoMenu {
+  right: 0;
+}
+
 .containerHam {
   height: 51.59px;
   align-items: center;
@@ -705,6 +719,7 @@ body::-webkit-scrollbar-thumb {
 
 .encabezado .iconoMenu {
   position: relative;
+  transition: all 0.5s;
 }
 .encabezado .menuHamburguer {
   position: fixed;
@@ -713,18 +728,60 @@ body::-webkit-scrollbar-thumb {
   height: 100%;
   width: 100%;
   margin: 0;
-  filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 40px 40px);
+  filter: drop-shadow(rgba(0, 0, 0, 0.322) 0px 40px 40px);
   transition: all 0.6s;
 }
 .encabezado .menuHamburguer .containerMenuHam {
   position: absolute;
-  background-color: #f3f3f3;
+  background-color: #202020;
   border-radius: 1.5rem 0 0 1.5rem;
   right: 50%;
   height: 100%;
   width: 46%;
   top: 0;
   right: 0;
+}
+.encabezado .menuHamburguer .containerMenuHam .menuFlex {
+  flex-direction: column;
+  height: 100%;
+  padding: 15%;
+  align-items: center;
+  justify-content: center;
+}
+.encabezado .menuHamburguer .containerMenuHam .menuFlex .subTitulos {
+  margin: 0 0 20px 0;
+  padding: 0;
+  font-size: 3.2rem;
+  color: white;
+}
+.encabezado .menuHamburguer .containerMenuHam .menuFlex .listas {
+  margin: 0;
+  padding: 0;
+}
+.encabezado .menuHamburguer .containerMenuHam .menuFlex .listas li {
+  margin: 0;
+  padding: 0;
+  font-size: 1.5rem;
+  color: white;
+}
+.encabezado .menuHamburguer .containerMenuHam .menuFlex .listas li .link {
+  color: white;
+}
+.encabezado .menuHamburguer .containerMenuHam .menuFlex .listas li .link:visited {
+  color: white;
+}
+.encabezado .menuHamburguer .containerMenuHam .menuFlex .listas li .link:hover {
+  color: white;
+}
+.encabezado .menuHamburguer .containerMenuHam .menuFlex .listas li .link:active {
+  color: white;
+}
+.encabezado .menuHamburguer .containerMenuHam .menuFlex .contacto {
+  height: 30%;
+}
+.encabezado .menuHamburguer .containerMenuHam .menuFlex .socialyMenu {
+  height: 70%;
+  justify-content: space-between;
 }
 
 /* //////////////////////////////////////////////////////////////////////////////// */

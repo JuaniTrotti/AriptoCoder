@@ -2,7 +2,7 @@
 /* //////////////////////////////////////////////////////////////////////////////// */
 .mainContainer {
     height: 900px;
-    background-color: $color-fondo;
+    background: linear-gradient(180deg, rgba(190,190,190,1) 0%, rgba(0,0,0,0) 100%);
     align-items: center;
     justify-content: center;
     padding: 8% 8% 4% 8%;
@@ -68,6 +68,7 @@
                 background-color: $color-principal;
                 border-radius: 1.5em;
                 flex-direction: column;
+                filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 20px 20px);
 
                 .fotoMainContenido {
                     height: 80%;
