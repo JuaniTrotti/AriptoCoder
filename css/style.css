@@ -180,7 +180,7 @@ body::-webkit-scrollbar-thumb {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 6% 0 0;
+  padding: 0 2% 0 0;
 }
 .mainContainer .sectionMainContainerIndex .textoIndex .titulos {
   font-size: 3.5rem;
@@ -993,6 +993,18 @@ body::-webkit-scrollbar-thumb {
   .pie .secFooter2 {
     max-width: 1616px;
   }
+
+  .pieSimple {
+    justify-content: center;
+  }
+  .pieSimple .secFooter2 {
+    max-width: 1616px;
+  }
+
+  .mainContainer .sectionMainContainerIndex {
+    max-width: 1616px;
+    justify-content: center;
+  }
 }
 /* mobile */
 @media screen and (max-width: 680px) {
@@ -1100,6 +1112,10 @@ body::-webkit-scrollbar-thumb {
     flex-basis: 1200px;
     margin: 0 10%;
   }
+
+  .mainContainer .sectionMainContainerIndex .imagenIndex .mainContenido {
+    height: 70%;
+  }
 }
 @media screen and (min-width: 1100px) and (max-width: 1500px) {
   .containerSubastas {
@@ -1135,6 +1151,10 @@ body::-webkit-scrollbar-thumb {
   .encabezado .header01 {
     flex-basis: 880px;
     margin: 0 10%;
+  }
+
+  .mainContainer .sectionMainContainerIndex .imagenIndex .mainContenido {
+    height: 50%;
   }
 }
 @media screen and (max-width: 1350px) {
@@ -1205,6 +1225,19 @@ body::-webkit-scrollbar-thumb {
   .encabezado .header01 {
     flex-basis: 464px;
     margin: 0;
+  }
+
+  .mainContainer {
+    height: 1400px;
+  }
+  .mainContainer .sectionMainContainerIndex {
+    flex-direction: column;
+  }
+  .mainContainer .sectionMainContainerIndex .imagenIndex {
+    align-items: center;
+  }
+  .mainContainer .sectionMainContainerIndex .imagenIndex .mainContenido {
+    height: 70%;
   }
 }
 @media screen and (max-width: 780px) {
@@ -1327,6 +1360,24 @@ body::-webkit-scrollbar-thumb {
     grid-template-columns: 2fr 1fr;
     gap: 0;
   }
+
+  .mainContainer {
+    height: 1400px;
+    padding: 18%;
+  }
+  .mainContainer .sectionMainContainerIndex {
+    flex-direction: column;
+  }
+  .mainContainer .sectionMainContainerIndex .textoIndex {
+    padding-top: 22%;
+  }
+  .mainContainer .sectionMainContainerIndex .imagenIndex {
+    align-items: center;
+  }
+  .mainContainer .sectionMainContainerIndex .imagenIndex .mainContenido {
+    height: 70%;
+    width: 100%;
+  }
 }
 @media screen and (max-width: 488px) {
   .containerSubastas {
@@ -1418,6 +1469,27 @@ body::-webkit-scrollbar-thumb {
 
   .infoPerfilContainer {
     margin: 20%;
+  }
+
+  .mainContainer {
+    height: 1400px;
+    padding: 18%;
+  }
+  .mainContainer .sectionMainContainerIndex {
+    flex-direction: column;
+  }
+  .mainContainer .sectionMainContainerIndex .textoIndex {
+    padding-top: 22%;
+  }
+  .mainContainer .sectionMainContainerIndex .textoIndex .titulos {
+    font-size: 3rem;
+  }
+  .mainContainer .sectionMainContainerIndex .imagenIndex {
+    align-items: center;
+  }
+  .mainContainer .sectionMainContainerIndex .imagenIndex .mainContenido {
+    height: 70%;
+    width: 100%;
   }
 }
 @media screen and (max-width: 1100px) {

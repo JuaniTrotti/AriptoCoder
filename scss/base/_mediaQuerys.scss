@@ -139,6 +139,22 @@
             max-width: 1616px;
         }
     }
+
+    .pieSimple {
+        justify-content: center;
+
+        .secFooter2 {
+            max-width: 1616px;
+        }
+    }
+
+    .mainContainer {
+
+        .sectionMainContainerIndex {
+            max-width: 1616px;
+            justify-content: center;
+        }
+    }
 }
 
 /* mobile */
@@ -272,6 +288,19 @@
             margin: 0 10%;
         }
     }
+
+    .mainContainer {
+
+        .sectionMainContainerIndex {
+
+            .imagenIndex {
+
+                .mainContenido {
+                    height: 70%;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width: 1100px) and (max-width: 1500px) {
@@ -313,6 +342,19 @@
         .header01 {
             flex-basis: 880px;
             margin: 0 10%;
+        }
+    }
+
+    .mainContainer {
+
+        .sectionMainContainerIndex {
+
+            .imagenIndex {
+
+                .mainContenido {
+                    height: 50%;
+                }
+            }
         }
     }
 }
@@ -420,6 +462,22 @@
         .header01 {
             flex-basis: 464px;
             margin: 0;
+        }
+    }
+
+    .mainContainer {
+        height: 1400px;
+
+        .sectionMainContainerIndex {
+            flex-direction: column;
+
+            .imagenIndex {
+                align-items: center;
+
+                .mainContenido {
+                    height: 70%;
+                }
+            }
         }
     }
 }
@@ -626,6 +684,28 @@
             }
         }
     }
+
+    .mainContainer {
+        height: 1400px;
+        padding: 18%;
+
+        .sectionMainContainerIndex {
+            flex-direction: column;
+
+            .textoIndex {
+                padding-top: 22%;
+            }
+
+            .imagenIndex {
+                align-items: center;
+
+                .mainContenido {
+                    height: 70%;
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 488px) {
@@ -772,6 +852,32 @@
 
     .infoPerfilContainer {
         margin: 20%;
+    }
+
+    .mainContainer {
+        height: 1400px;
+        padding: 18%;
+
+        .sectionMainContainerIndex {
+            flex-direction: column;
+
+            .textoIndex {
+                padding-top: 22%;
+
+                .titulos {
+                    font-size: 3rem;
+                }
+            }
+
+            .imagenIndex {
+                align-items: center;
+
+                .mainContenido {
+                    height: 70%;
+                    width: 100%;
+                }
+            }
+        }
     }
 }
 
