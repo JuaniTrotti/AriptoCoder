@@ -467,6 +467,7 @@
 
     .mainContainer {
         height: 1400px;
+        padding: 18%;
 
         .sectionMainContainerIndex {
             flex-direction: column;
@@ -476,6 +477,7 @@
 
                 .mainContenido {
                     height: 70%;
+                    width: 100%;
                 }
             }
         }
@@ -855,26 +857,56 @@
     }
 
     .mainContainer {
-        height: 1400px;
+        height: 800px;
         padding: 18%;
 
         .sectionMainContainerIndex {
             flex-direction: column;
 
             .textoIndex {
-                padding-top: 22%;
+                padding-top: 50%;
+                height: 200px;
 
                 .titulos {
-                    font-size: 3rem;
+                    font-size: 2rem;
+                }
+
+                .subTitulos {
+                    display: none;
+                }
+                
+                .botonesIndex {
+                    display: none;
                 }
             }
 
             .imagenIndex {
                 align-items: center;
+                padding-top: 20%;
 
                 .mainContenido {
-                    height: 70%;
+                    height: 90%;
                     width: 100%;
+                }
+            }
+        }
+    }
+
+    .subTitulos {
+        font-size: 1.5rem;
+    }
+
+    .pie {
+
+        .secFooter2 {
+
+            .navFooter2 {
+
+                .listas {
+                
+                    li {
+                        margin-right: 0;
+                    }
                 }
             }
         }
