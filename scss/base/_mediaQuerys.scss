@@ -155,6 +155,18 @@
             justify-content: center;
         }
     }
+
+    .infoPerfilContainer {
+        align-items: center;
+
+        .separador {
+            max-width: 1616px;
+        }
+
+        .sectionInfo {
+            max-width: 1616px;
+        }
+    }
 }
 
 /* mobile */
@@ -238,6 +250,10 @@
             margin: 0 8%;
         }
     }
+
+    .infoPerfilContainer {
+        margin: 3% 8%;
+    }
 }
 
 @media screen and (min-width: 1500px) and (max-width: 1800px) {
@@ -301,6 +317,10 @@
             }
         }
     }
+
+    .infoPerfilContainer {
+        margin: 3% 10%;
+    }
 }
 
 @media screen and (min-width: 1100px) and (max-width: 1500px) {
@@ -353,6 +373,25 @@
 
                 .mainContenido {
                     height: 50%;
+                }
+            }
+        }
+    }
+
+    .infoPerfilContainer {
+        margin: 10% 10%;
+        
+        .sectionInfo {
+
+            .itemPerfil{
+                width: 60%;
+            }
+
+            .itemDescPerfil {
+                width: 40%;
+
+                .texto {
+                    font-size: 1.5rem;
                 }
             }
         }
@@ -478,6 +517,42 @@
                 .mainContenido {
                     height: 70%;
                     width: 100%;
+                }
+            }
+        }
+    }
+
+    .infoPerfilContainer {
+        margin: 10% 10%;
+        
+        .sectionInfo {
+            flex-direction: column;
+
+            .itemPerfil{
+                width: 100%;
+                justify-content: space-between;
+
+                .fotoPerfilInfo {
+
+                    .contFotoPerfil {
+                        height: 120px;
+                        width: 120px;
+                    }
+                }
+
+                .infoPerfil {
+                    height: 120px;
+                    align-items: flex-end;
+                }
+            }
+
+            .itemDescPerfil {
+                width: 100%;
+                padding: 5% 0 3% 0;
+                justify-content: flex-end;
+
+                .texto {
+                    font-size: 1.6rem;
                 }
             }
         }
@@ -679,6 +754,7 @@
                 .usOpContFlex {
 
                     .usOp {
+                        margin: 0 15% 0 15%;
                         grid-template-columns: 2fr 1fr;
                         gap: 0;
                     }
@@ -706,6 +782,57 @@
                     width: 100%;
                 }
             }
+        }
+    }
+
+    .infoPerfilContainer {
+        margin: 15% 15%;
+
+        .separador {
+            margin-bottom: 8%;
+        }
+
+        .sectionInfo {
+            flex-direction: column;
+
+            .itemPerfil{
+                width: 100%;
+                justify-content: space-between;
+
+                .fotoPerfilInfo {
+
+                    .contFotoPerfil {
+                        height: 80px;
+                        width: 80px;
+                    }
+                }
+
+                .infoPerfil {
+                    height: 80px;
+                    align-items: flex-end;
+
+                    .subTitulos {
+                        font-size: 2rem;
+                    }
+                }
+            }
+
+            .itemDescPerfil {
+                width: 100%;
+                padding: 5% 0 3% 0;
+                justify-content: flex-end;
+
+                .texto {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+
+    .dataContainerFlex {
+
+        .dataContainer {
+            margin: 16% 15%;
         }
     }
 }
@@ -848,7 +975,7 @@
     .dataContainerFlex {
 
         .dataContainer {
-            margin: 16%;
+            margin: 16% 20%;
         }
     }
 
@@ -907,6 +1034,54 @@
                     li {
                         margin-right: 0;
                     }
+                }
+            }
+        }
+    }
+
+    .infoPerfilContainer {
+        margin: 15% 20%;
+
+        .separador {
+            margin-bottom: 8%;
+        }
+
+        .sectionInfo {
+            flex-direction: column;
+
+            .itemPerfil{
+                width: 100%;
+                justify-content: space-between;
+
+                .fotoPerfilInfo {
+
+                    .contFotoPerfil {
+                        height: 80px;
+                        width: 80px;
+                    }
+                }
+
+                .infoPerfil {
+                    height: 80px;
+                    align-items: flex-end;
+
+                    .subTitulos {
+                        font-size: 1.5rem;
+                    }
+                    
+                    .subtitulosSecundarios {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+
+            .itemDescPerfil {
+                width: 100%;
+                padding: 5% 0 3% 0;
+                justify-content: flex-end;
+
+                .texto {
+                    font-size: 1rem;
                 }
             }
         }

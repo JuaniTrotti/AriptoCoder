@@ -1,5 +1,7 @@
 @import '../base/variables';
+
 /* //////////////////////////////////////////////////////////////////////////////// */
+
 .sectionMainContainer {
     flex-direction: column;
     background-color: $color-fondo;
@@ -33,6 +35,8 @@
         gap: 40px;
         margin: 0 8%;
 
+        height: 50px;
+
         .nom1 {
             justify-content: flex-start;
 
@@ -41,7 +45,7 @@
                 border-radius: 2em;
                 background-color: white;
                 color: $color-footer-fondo;
-                padding: 0 1.5em 0 0.8em;
+                padding: 0 1.5em 0 1.5em;
                 font-family: var(--font-principal-regular);
                 filter: drop-shadow(rgba(0, 0, 0, 0.25) 0px 5px 5px);
                 display: flex;
@@ -49,8 +53,34 @@
                 justify-content: flex-start;
                 align-items: center;
 
-                .iconPerfil {
-                    transform: scale(.6);
+                .opFotoCont {
+                    height: 30px;
+                    width: 30px;
+                
+                    .iconPerfil {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 10rem;
+                    }
+                }
+                
+                a {
+                    padding-left: 1em;
+                    font-size: 1rem;
+                    color: $color-principal;
+
+                    &:visited {
+                        color: $color-principal;
+                    }
+                
+                    &:hover {
+                        color: $color-principal;
+                    }
+                
+                    &:active {
+                        color: $color-principal;
+                    }
                 }
             }
         }
@@ -135,12 +165,9 @@
                 display: flex;
                 justify-content: flex-end;
             }
-    
         }
     }
 }
 
-.infoPerfilContainer {
-    margin: 10%;
-}
+
 /* //////////////////////////////////////////////////////////////////////////////// */
