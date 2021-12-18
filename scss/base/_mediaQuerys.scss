@@ -1184,15 +1184,16 @@
                     
                     .socialyMenu {
                         flex-direction: column;
+                        justify-content: space-between;
+                        height: 100%;
     
                         .socialContainer {
                             order: 2;
-                            height: 30%;
+                            padding-bottom: 80px;
                         }
     
                         .menuPContainer {
                             order: 1;
-                            height: 70%;
                         }
                     }
 

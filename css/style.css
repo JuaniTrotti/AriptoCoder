@@ -1771,14 +1771,15 @@ body::-webkit-scrollbar-thumb {
   }
   .encabezado .menuHamburguer .containerMenuHam .menuFlex .socialyMenu {
     flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
   }
   .encabezado .menuHamburguer .containerMenuHam .menuFlex .socialyMenu .socialContainer {
     order: 2;
-    height: 30%;
+    padding-bottom: 80px;
   }
   .encabezado .menuHamburguer .containerMenuHam .menuFlex .socialyMenu .menuPContainer {
     order: 1;
-    height: 70%;
   }
   .encabezado .menuHamburguer .containerMenuHam .menuFlex .contacto {
     display: none;
