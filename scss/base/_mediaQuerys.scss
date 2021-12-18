@@ -396,6 +396,16 @@
             }
         }
     }
+
+    .encabezado {
+
+        .menuHamburguer {
+    
+            .containerMenuHam {
+                width: 60%;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1350px) {
@@ -553,6 +563,33 @@
 
                 .texto {
                     font-size: 1.6rem;
+                }
+            }
+        }
+    }
+
+    .encabezado {
+
+        .menuHamburguer {
+    
+            .containerMenuHam {
+                width: 50%;
+
+                .menuFlex {
+
+                    .socialyMenu {
+                        flex-direction: column;
+    
+                        .socialContainer {
+                            order: 2;
+                            height: 40%;
+                        }
+    
+                        .menuPContainer {
+                            order: 1;
+                            height: 60%;
+                        }
+                    }
                 }
             }
         }
@@ -835,6 +872,44 @@
             margin: 16% 15%;
         }
     }
+
+    .encabezado {
+
+        .menuHamburguer {
+    
+            .containerMenuHam {
+                width: 60%;
+
+                .menuFlex {
+                    padding-top: 80px;
+                    
+                    .subTitulos {
+                        font-size: 2rem;
+                    }
+
+                    .listas {
+                        li {
+                            font-size: 1.4rem;
+                        }
+                    }
+                    
+                    .socialyMenu {
+                        flex-direction: column;
+    
+                        .socialContainer {
+                            order: 2;
+                            height: 30%;
+                        }
+    
+                        .menuPContainer {
+                            order: 1;
+                            height: 70%;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 488px) {
@@ -1077,11 +1152,53 @@
 
             .itemDescPerfil {
                 width: 100%;
-                padding: 5% 0 3% 0;
+                padding: 10% 0 3% 0;
                 justify-content: flex-end;
 
                 .texto {
                     font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .encabezado {
+
+        .menuHamburguer {
+    
+            .containerMenuHam {
+                width: 60%;
+
+                .menuFlex {
+                    padding-top: 80px;
+                    
+                    .subTitulos {
+                        font-size: 2rem;
+                    }
+
+                    .listas {
+                        li {
+                            font-size: 1.4rem;
+                        }
+                    }
+                    
+                    .socialyMenu {
+                        flex-direction: column;
+    
+                        .socialContainer {
+                            order: 2;
+                            height: 30%;
+                        }
+    
+                        .menuPContainer {
+                            order: 1;
+                            height: 70%;
+                        }
+                    }
+
+                    .contacto {
+                        display: none;
+                    }
                 }
             }
         }

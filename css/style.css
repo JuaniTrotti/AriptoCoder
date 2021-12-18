@@ -1259,6 +1259,10 @@ body::-webkit-scrollbar-thumb {
   .infoPerfilContainer .sectionInfo .itemDescPerfil .texto {
     font-size: 1.5rem;
   }
+
+  .encabezado .menuHamburguer .containerMenuHam {
+    width: 60%;
+  }
 }
 @media screen and (max-width: 1350px) {
   .coleccionesContainer {
@@ -1370,6 +1374,21 @@ body::-webkit-scrollbar-thumb {
   }
   .infoPerfilContainer .sectionInfo .itemDescPerfil .texto {
     font-size: 1.6rem;
+  }
+
+  .encabezado .menuHamburguer .containerMenuHam {
+    width: 50%;
+  }
+  .encabezado .menuHamburguer .containerMenuHam .menuFlex .socialyMenu {
+    flex-direction: column;
+  }
+  .encabezado .menuHamburguer .containerMenuHam .menuFlex .socialyMenu .socialContainer {
+    order: 2;
+    height: 40%;
+  }
+  .encabezado .menuHamburguer .containerMenuHam .menuFlex .socialyMenu .menuPContainer {
+    order: 1;
+    height: 60%;
   }
 }
 @media screen and (max-width: 780px) {
@@ -1548,6 +1567,30 @@ body::-webkit-scrollbar-thumb {
   .dataContainerFlex .dataContainer {
     margin: 16% 15%;
   }
+
+  .encabezado .menuHamburguer .containerMenuHam {
+    width: 60%;
+  }
+  .encabezado .menuHamburguer .containerMenuHam .menuFlex {
+    padding-top: 80px;
+  }
+  .encabezado .menuHamburguer .containerMenuHam .menuFlex .subTitulos {
+    font-size: 2rem;
+  }
+  .encabezado .menuHamburguer .containerMenuHam .menuFlex .listas li {
+    font-size: 1.4rem;
+  }
+  .encabezado .menuHamburguer .containerMenuHam .menuFlex .socialyMenu {
+    flex-direction: column;
+  }
+  .encabezado .menuHamburguer .containerMenuHam .menuFlex .socialyMenu .socialContainer {
+    order: 2;
+    height: 30%;
+  }
+  .encabezado .menuHamburguer .containerMenuHam .menuFlex .socialyMenu .menuPContainer {
+    order: 1;
+    height: 70%;
+  }
 }
 @media screen and (max-width: 488px) {
   .containerSubastas {
@@ -1707,11 +1750,38 @@ body::-webkit-scrollbar-thumb {
   }
   .infoPerfilContainer .sectionInfo .itemDescPerfil {
     width: 100%;
-    padding: 5% 0 3% 0;
+    padding: 10% 0 3% 0;
     justify-content: flex-end;
   }
   .infoPerfilContainer .sectionInfo .itemDescPerfil .texto {
     font-size: 1rem;
+  }
+
+  .encabezado .menuHamburguer .containerMenuHam {
+    width: 60%;
+  }
+  .encabezado .menuHamburguer .containerMenuHam .menuFlex {
+    padding-top: 80px;
+  }
+  .encabezado .menuHamburguer .containerMenuHam .menuFlex .subTitulos {
+    font-size: 2rem;
+  }
+  .encabezado .menuHamburguer .containerMenuHam .menuFlex .listas li {
+    font-size: 1.4rem;
+  }
+  .encabezado .menuHamburguer .containerMenuHam .menuFlex .socialyMenu {
+    flex-direction: column;
+  }
+  .encabezado .menuHamburguer .containerMenuHam .menuFlex .socialyMenu .socialContainer {
+    order: 2;
+    height: 30%;
+  }
+  .encabezado .menuHamburguer .containerMenuHam .menuFlex .socialyMenu .menuPContainer {
+    order: 1;
+    height: 70%;
+  }
+  .encabezado .menuHamburguer .containerMenuHam .menuFlex .contacto {
+    display: none;
   }
 }
 @media screen and (max-width: 1100px) {
