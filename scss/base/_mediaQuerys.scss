@@ -167,6 +167,21 @@
             max-width: 1616px;
         }
     }
+
+    .perfilContainer {
+        
+        .fotosContainer {
+            justify-content: center;
+    
+            .fotoPerfil {
+                max-width: 1616px;
+                
+                .fondoPerfil {
+                    left: 0;
+                }
+            }
+        }
+    }
 }
 
 /* mobile */
